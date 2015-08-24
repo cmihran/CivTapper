@@ -73,6 +73,8 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         running = true;
 
+        //test comment to demonstrate committing
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
