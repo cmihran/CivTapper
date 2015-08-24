@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">CivTapper</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_about">About</string>
+
+    <string name="population_Label">Population</string>
+    <string name="resourceLabel">Resources</string>
+
+    <string name="foodLabel">Food: </string>
+    <string name="foodAmount">0.0 </string>
+    <string name="foodRate">0.0/s</string>
+
+    <string name="woodLabel">Wood: </string>
+    <string name="woodAmount">0.0 </string>
+    <string name="woodRate">0.0/s</string>
+
+    <string name="stoneLabel">Stone: </string>
+    <string name="stoneAmount">0.0 </string>
+    <string name="stoneRate">0.0/s</string>
+
+    <!-- text fields to store data -->
+    <string name="storeWorkers">Unemployed Workers: 0</string>
+    <string name="storeFarmers">Farmers (+1.2/s): 0</string>
+    <string name="storeLumberjacks">Lumberjacks (+0.5/s): 0</string>
+    <string name="storeMiners">Miners (+0.2/s): 0</string>
+
+    <!-- button text -->
+    <string name="gatherFood">Gather Food</string>
+    <string name="gatherWood">Cut Wood</string>
+    <string name="gatherStone">Mine Stone</string>
+    <string name="createWorker">Create Worker (10 food)</string>
+    <string name="buttonPlus">+</string>
+    <string name="buttonMinus">-</string>
+
+</resources>

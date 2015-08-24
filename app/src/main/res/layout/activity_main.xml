@@ -1,0 +1,290 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <!-- Food -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resourceLabel"
+        android:id="@+id/resourceLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:textSize="38sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resourceLabel"
+        android:layout_toRightOf="@+id/foodImage"
+        android:text="@string/gatherFood"
+        android:id="@+id/foodLabel"
+        android:onClick="gatherFood"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/foodAmount"
+        android:id="@+id/foodAmount"
+        android:layout_alignTop="@+id/foodImage"
+        android:layout_toLeftOf="@+id/foodRate"
+        android:layout_toStartOf="@id/foodRate"
+        android:layout_alignBottom="@id/foodLabel"
+        android:gravity="center"
+        android:textSize="28sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/foodRate"
+        android:id="@+id/foodRate"
+        android:layout_alignTop="@+id/foodAmount"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="20sp"/>
+
+    <!-- Wood -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gatherWood"
+        android:id="@+id/woodLabel"
+        android:layout_below="@+id/foodLabel"
+        android:layout_toRightOf="@+id/woodImage"
+        android:layout_toEndOf="@id/woodImage"
+        android:onClick="gatherWood" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/woodAmount"
+        android:id="@+id/woodAmount"
+        android:layout_alignTop="@+id/woodLabel"
+        android:layout_toLeftOf="@+id/woodRate"
+        android:layout_toStartOf="@+id/woodRate"
+        android:layout_alignBottom="@id/woodLabel"
+        android:gravity="center"
+        android:textSize="28sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/woodRate"
+        android:id="@+id/woodRate"
+        android:layout_alignTop="@+id/woodAmount"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="20sp"/>
+
+    <!-- Stone -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gatherStone"
+        android:id="@+id/stoneLabel"
+        android:layout_below="@+id/woodLabel"
+        android:layout_toRightOf="@+id/stoneImage"
+        android:layout_toEndOf="@id/stoneImage"
+        android:onClick="gatherStone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stoneAmount"
+        android:id="@+id/stoneAmount"
+        android:layout_alignTop="@+id/stoneLabel"
+        android:layout_toLeftOf="@+id/stoneRate"
+        android:layout_toStartOf="@+id/stoneRate"
+        android:layout_alignBottom="@id/stoneLabel"
+        android:gravity="center"
+        android:textSize="28sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stoneRate"
+        android:id="@+id/stoneRate"
+        android:layout_alignTop="@+id/stoneAmount"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="20sp"/>
+
+    <!-- -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/storeWorkers"
+        android:id="@+id/textViewWorker"
+        android:layout_below="@+id/population_Label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:textSize="25sp"
+        android:gravity="center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/createWorker"
+        android:id="@+id/buttonWorker"
+        android:layout_below="@+id/textViewWorker"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:onClick="createPopulation"/>
+
+    <!-- Population -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/population_Label"
+        android:id="@+id/population_Label"
+        android:layout_below="@+id/stoneLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:textSize="38sp"
+        android:textStyle="bold"/>
+
+    <!-- Farmers -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/storeFarmers"
+        android:id="@+id/textViewFarmer"
+        android:layout_below="@+id/buttonWorker"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/buttonFarmerAdd"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonPlus"
+        android:id="@+id/buttonFarmerAdd"
+        android:layout_below="@+id/buttonWorker"
+        android:layout_toLeftOf="@+id/buttonFarmerMinus"
+        android:onClick="createFarmer"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonMinus"
+        android:id="@+id/buttonFarmerMinus"
+        android:layout_alignBottom="@+id/buttonFarmerAdd"
+        android:layout_alignParentRight="true"
+        android:onClick="destroyFarmer"/>
+
+    <!-- Lumberjack -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/storeLumberjacks"
+        android:id="@+id/textViewLumberjack"
+        android:layout_below="@+id/textViewFarmer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/buttonLumberJackMinus"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonMinus"
+        android:id="@+id/buttonLumberJackMinus"
+        android:layout_below="@+id/textViewFarmer"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="destroyLumberjack"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonPlus"
+        android:id="@+id/buttonLumberJackAdd"
+        android:layout_below="@+id/textViewFarmer"
+        android:layout_toLeftOf="@+id/buttonLumberJackMinus"
+        android:layout_toStartOf="@+id/buttonFarmerAdd"
+        android:onClick="createLumberjack"/>
+
+    <!-- Miner -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/storeMiners"
+        android:id="@+id/textViewMiner"
+        android:layout_below="@+id/textViewLumberjack"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/buttonMinerMinus"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonMinus"
+        android:id="@+id/buttonMinerMinus"
+        android:layout_below="@+id/textViewLumberjack"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="destroyMiner"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonPlus"
+        android:id="@+id/buttonMinerPlus"
+        android:layout_alignBottom="@+id/buttonMinerMinus"
+        android:layout_toLeftOf="@+id/buttonMinerMinus"
+        android:layout_toStartOf="@+id/buttonMinerMinus"
+        android:onClick="createMiner"/>
+
+    <ImageButton
+        android:layout_width="@android:dimen/app_icon_size"
+        android:layout_height="wrap_content"
+        android:id="@+id/foodImage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@+id/foodLabel"
+        android:layout_alignTop="@+id/foodLabel"
+        android:background="@drawable/wheat" />
+
+    <ImageButton
+        android:layout_width="@android:dimen/app_icon_size"
+        android:layout_height="wrap_content"
+        android:id="@+id/woodImage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@+id/woodLabel"
+        android:layout_alignTop="@+id/woodLabel"
+        android:background="@drawable/log" />
+
+    <ImageButton
+        android:layout_width="@android:dimen/app_icon_size"
+        android:layout_height="wrap_content"
+        android:id="@+id/stoneImage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@+id/stoneLabel"
+        android:layout_alignTop="@+id/stoneLabel"
+        android:background="@drawable/stonepile" />
+
+
+
+</RelativeLayout>
